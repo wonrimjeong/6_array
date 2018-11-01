@@ -34,15 +34,15 @@ int addMatrix(int A[][COLS], int B[][COLS], int C[][COLS])
 }
 int main(int argc, char *argv[]) {
 	
-	int A[ROWS][COLS]={
+	int A[ROWS][COLS]={ //더하기 대상 행렬 
 		{2, 3, 0},
 		{8, 9, 1},
 		{7, 0, 5}};
-	int B[ROWS][COLS]={
+	int B[ROWS][COLS]={//더하기 대상 행렬 
 		{1, 0, 0},
 		{0, 1, 0},
 		{0, 0, 1}};
-	int C[ROWS][COLS];
+	int C[ROWS][COLS];	//덧셈 결과 행렬 
 	
 	addMatrix(A, B, C);
 	printMatrix(C);
